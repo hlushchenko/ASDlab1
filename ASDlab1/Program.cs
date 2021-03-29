@@ -6,7 +6,12 @@ namespace ASDlab1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var graph = Graph.Input();
+            Console.WriteLine();
+            graph.PrintMatrix();
+            Console.WriteLine();
+            var result = graph.Boruvka();
+            result.PrintMatrix();
         }
     }
 }
